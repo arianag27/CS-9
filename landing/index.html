@@ -115,9 +115,15 @@
     }
     table.schedule {
       width: 100%;
-      min-width: 42rem;
+      min-width: 52rem;
       border-collapse: collapse;
       font-size: 0.875rem;
+    }
+    .schedule td.title { min-width: 12rem; }
+    .schedule .slide-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.65rem;
     }
     .schedule th,
     .schedule td {
@@ -188,94 +194,131 @@
   <main>
     <div class="intro">
       <p>
-        <strong>How to use this page:</strong> Use the <em>Lecture</em> and <em>Lab</em> links to open notebooks in JupyterLite.
-        Edit dates and topics in <code>landing/index.html</code> to match your syllabus.
+        <strong>How to use this page:</strong> Open <em>Slides</em> for lecture decks, or use <em>Notebook</em> and <em>Lab</em> to run materials in JupyterLite.
+        Edit the schedule in <code>landing/index.html</code> to match your syllabus.
         Your instructor’s syllabus is the final word on what to submit and when.
       </p>
     </div>
 
     <div class="schedule-wrap">
       <table class="schedule">
-        <caption>Course schedule (update dates in <code>landing/index.html</code>)</caption>
+        <caption>Course schedule</caption>
         <thead>
           <tr>
             <th scope="col">Week</th>
-            <th scope="col">Topic</th>
-            <th scope="col">Lecture</th>
+            <th scope="col">Title</th>
+            <th scope="col">Slides</th>
+            <th scope="col">Notebook</th>
             <th scope="col">Lab</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="week">1</td>
-            <td>Introduction</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/intro/intro.ipynb">intro.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab01/lab01.ipynb">Lab 1</a></td>
+            <td class="title">Intro / CSCI-8 Review</td>
+            <td><a href="https://docs.google.com/presentation/d/14YmT7rsjsh2Omo9qWPJmC4ZqaRGb-wOkOmWfQLskcuk/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/intro/intro.ipynb">intro</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab01/lab01.ipynb">lab01</a></td>
           </tr>
           <tr>
             <td class="week">2</td>
-            <td>Visualization 1</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_1/visualization_1.ipynb">visualization_1.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab02/lab02.ipynb">Lab 2</a></td>
+            <td class="title">Pandas I</td>
+            <td><a href="https://docs.google.com/presentation/d/1lsWRU-dWpaVsmrNPY58jE-P4TCYwIBi1p7eDCFT5U9w/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_1/pandas_1.ipynb">pandas_1</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab02/lab02.ipynb">lab02</a></td>
           </tr>
           <tr>
             <td class="week">3</td>
-            <td>Visualization 2</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_2/visualization_2.ipynb">visualization_2.ipynb</a></td>
+            <td class="title">Pandas II</td>
+            <td><a href="https://docs.google.com/presentation/d/1P_R3J10w4QicGfyXKB4tztsJjiVLg2iWe3Sy9F8QIDU/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_2/pandas_2.ipynb">pandas_2</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
             <td class="week">4</td>
-            <td>Pandas 1</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_1/pandas_1.ipynb">pandas_1.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03A/lab03A.ipynb">Lab 3A</a></td>
+            <td class="title">Pandas III</td>
+            <td><a href="https://docs.google.com/presentation/d/146X-rFLnjtDITzEDgUzPvP6QL95s3CoVDmiBaAHzu3A/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_3/pandas_3.ipynb">pandas_3</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03A/lab03A.ipynb">lab03A</a></td>
           </tr>
           <tr>
             <td class="week">5</td>
-            <td>Pandas 2</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_2/pandas_2.ipynb">pandas_2.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03B/lab03B.ipynb">Lab 3B</a></td>
+            <td class="title">Exploring and Cleaning Data / Text Wrangling</td>
+            <td><a href="https://docs.google.com/presentation/d/1rCmtGJ4gnDMKx1EFgPTYHha7xvPs3kiYLrktIBhZPj0/present">Slides</a></td>
+            <td class="muted">—</td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03B/lab03B.ipynb">lab03B</a></td>
           </tr>
           <tr>
             <td class="week">6</td>
-            <td>Pandas 3</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_3/pandas_3.ipynb">pandas_3.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab04/lab04.ipynb">Lab 4</a></td>
+            <td class="title">Text Wrangling and Regular Expressions / Visualization</td>
+            <td><a href="https://docs.google.com/presentation/d/1wja9GN0MExL901QyunLytr1QBY1BEYdrUqdw_vskc1w/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/text_wrangling_regex/text_wrangling_regex.ipynb">text_wrangling_regex</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab04/lab04.ipynb">lab04</a></td>
           </tr>
           <tr>
             <td class="week">7</td>
-            <td>Text wrangling &amp; regex</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/text_wrangling_regex/text_wrangling_regex.ipynb">text_wrangling_regex.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab05/lab05.ipynb">Lab 5</a></td>
+            <td class="title">Visualization</td>
+            <td><a href="https://docs.google.com/presentation/d/1nlZrjEDs99uL_Ff_gnMCa50d9aisnYUj_szMPNBprek/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_1/visualization_1.ipynb">visualization_1</a></td>
+            <td class="muted">—</td>
           </tr>
           <tr>
             <td class="week">8</td>
-            <td>Modeling 1</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_1/modeling_1.ipynb">modeling_1.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab06/proj1.ipynb">Lab 6 · Project</a></td>
+            <td class="title">Visualization 2</td>
+            <td><a href="https://docs.google.com/presentation/d/1rJLeu1qTyhjxnKzLAk64qxR4elKY6HPHmdEGWfo1e8/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_2/visualization_2.ipynb">visualization_2</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab06/proj1.ipynb">lab06</a></td>
           </tr>
           <tr>
             <td class="week">9</td>
-            <td>Modeling 2</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_2/modeling_2.ipynb">modeling_2.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab07/Modeling_CA_Housing_lab.ipynb">Lab 7 · CA housing</a></td>
+            <td class="title">Sampling</td>
+            <td class="slide-links">
+              <a href="https://docs.google.com/presentation/d/1zfUAKGIiYrI1KX2i9vcw5OKyPojzXerXxZNd8AOfQYU/present">Slides 1</a>
+              <a href="https://docs.google.com/presentation/d/1_HFA6HwP6qILG70U0mHj3n4FD7CSslHsxhS02KoyySw/present">Slides 2</a>
+            </td>
+            <td class="muted">—</td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab05/lab05.ipynb">lab05</a></td>
           </tr>
           <tr>
             <td class="week">10</td>
-            <td>Modeling 3</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_3/modeling_3.ipynb">modeling_3.ipynb</a></td>
+            <td class="title">Modeling — Simple Linear Regression</td>
+            <td><a href="https://docs.google.com/presentation/d/1Y0tQ4XQy1pOcV3uDcPqvRuCxA9yUnt8-q7RsyRRPS9g/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_1/modeling_1.ipynb">modeling_1</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
             <td class="week">11</td>
-            <td>Modeling 4</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_4/modeling_4.ipynb">modeling_4.ipynb</a></td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab08/policing.ipynb">Lab 8 · Policing</a></td>
+            <td class="title">Modeling — Feature Engineering</td>
+            <td><a href="https://docs.google.com/presentation/d/1pRqfY_TcwjIOeAbMbQ8SHvRrT9cEi3evzF5CqBkluiU/present">Slides</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_2/modeling_2.ipynb">modeling_2</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab07/Modeling_CA_Housing_lab.ipynb">lab07</a></td>
           </tr>
           <tr>
             <td class="week">12</td>
-            <td>Modeling 5</td>
-            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_5/lec17.ipynb">lec17.ipynb</a></td>
+            <td class="title">Cancelled / Standardization, Multicollinearity, Generalization</td>
+            <td class="muted">—</td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_3/modeling_3.ipynb">modeling_3</a></td>
+            <td class="muted">—</td>
+          </tr>
+          <tr>
+            <td class="week">13</td>
+            <td class="title">Hyperparameters, Cross-Validation, Decision Trees / Random Forests, Classifier Evaluation</td>
+            <td class="muted">—</td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_4/modeling_4.ipynb">modeling_4</a></td>
+            <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab08/policing.ipynb">lab08</a></td>
+          </tr>
+          <tr>
+            <td class="week">14</td>
+            <td class="title">SQL I</td>
+            <td><a href="https://docs.google.com/presentation/d/1LmImTSHiGooUrdxqIw5E3jUYH5DaG3eRIJNzGNx04fg/present">Slides</a></td>
+            <td class="muted">—</td>
+            <td class="muted">—</td>
+          </tr>
+          <tr>
+            <td class="week">15</td>
+            <td class="title">SQL II</td>
+            <td><a href="https://docs.google.com/presentation/d/1Xa-h5jFcqDGZnbQMkiUNJMiRcnsNMJh6Vr3_hHFeXKs/present">Slides</a></td>
+            <td class="muted">—</td>
             <td class="muted">—</td>
           </tr>
         </tbody>
