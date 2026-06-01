@@ -37,7 +37,6 @@ jobs:
       - name: Build the JupyterLite site
         shell: bash -l {0}
         run: |
-          cp README.md content
           rm -f .jupyterlite.doit.db
           jupyter lite build --contents content --output-dir dist
           test -f landing/index.html

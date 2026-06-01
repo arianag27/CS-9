@@ -2,19 +2,19 @@
 
 [![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.rtfd.io/en/latest/)
 
-Run **CSCI 9** lecture and lab notebooks in the browser—no local install required. All materials live under **`csci9-sp26-student/`** in the file browser.
+Run **CSCI 9** lecture and lab notebooks in the browser—no local install required. All materials live under **`content/`** (`lab/`, `lecture/`, and `README.md`).
 
 ## Materials layout
 
 | Area | Path |
 | --- | --- |
-| Lectures | `csci9-sp26-student/lecture/` |
-| Labs | `csci9-sp26-student/lab/` |
-| Course index | `csci9-sp26-student/README.md` |
+| Lectures | `content/lecture/` |
+| Labs | `content/lab/` |
+| Course index | `content/README.md` |
 
 ## Home page
 
-The deployed site uses a **weekly schedule** on the home page with links into each notebook (`./lab/index.html?path=csci9-sp26-student/...`). Adjust dates and ordering in `landing/index.html` to match your syllabus.
+The deployed site uses a **weekly schedule** on the home page with links into each notebook (`./lab/index.html?path=lecture/...` or `lab/...`). Adjust dates and ordering in `landing/index.html` to match your syllabus.
 
 ## Local build (optional)
 

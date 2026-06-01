@@ -1,25 +1,36 @@
-# CSCI 9 — JupyterLite 
+# CSCI 9 — Spring 2026 (student materials)
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.rtfd.io/en/latest/)
+Course notebooks and data files for use in the browser via JupyterLite.
 
-Run **CSCI 9** lecture and lab notebooks in the browser—no local install required. All materials live under **`csci9-sp26-student/`** in the file browser.
+## Lectures
 
-## Materials layout
-
-| Area | Path |
+| Topic | Notebook |
 | --- | --- |
-| Lectures | `csci9-sp26-student/lecture/` |
-| Labs | `csci9-sp26-student/lab/` |
-| Course index | `csci9-sp26-student/README.md` |
+| Introduction | `lecture/intro/intro.ipynb` |
+| Visualization 1 | `lecture/visualization_1/visualization_1.ipynb` |
+| Visualization 2 | `lecture/visualization_2/visualization_2.ipynb` |
+| Pandas 1 | `lecture/pandas_1/pandas_1.ipynb` |
+| Pandas 2 | `lecture/pandas_2/pandas_2.ipynb` |
+| Pandas 3 | `lecture/pandas_3/pandas_3.ipynb` |
+| Text & regex | `lecture/text_wrangling_regex/text_wrangling_regex.ipynb` |
+| Modeling 1 | `lecture/modeling_1/modeling_1.ipynb` |
+| Modeling 2 | `lecture/modeling_2/modeling_2.ipynb` |
+| Modeling 3 | `lecture/modeling_3/modeling_3.ipynb` |
+| Modeling 4 | `lecture/modeling_4/modeling_4.ipynb` |
+| Modeling 5 | `lecture/modeling_5/lec17.ipynb` |
 
-## Home page
+## Labs
 
-The deployed site uses a **weekly schedule** on the home page with links into each notebook (`./lab/index.html?path=csci9-sp26-student/...`). Adjust dates and ordering in `landing/index.html` to match your syllabus.
+| Lab | Notebook |
+| --- | --- |
+| Lab 1 | `lab/lab01/lab01.ipynb` |
+| Lab 2 | `lab/lab02/lab02.ipynb` |
+| Lab 3A | `lab/lab03A/lab03A.ipynb` |
+| Lab 3B | `lab/lab03B/lab03B.ipynb` |
+| Lab 4 | `lab/lab04/lab04.ipynb` |
+| Lab 5 | `lab/lab05/lab05.ipynb` |
+| Lab 6 (project) | `lab/lab06/lab06.ipynb` |
+| Lab 7 | `lab/lab07/lab07.ipynb` |
+| Lab 8 | `lab/lab08/lab08.ipynb` |
 
-## Local build (optional)
-
-```bash
-micromamba create -f .github/build-environment.yml
-jupyter lite build --contents content --output-dir dist
-cp landing/index.html dist/index.html
-```
+Your instructor’s syllabus is the source of truth for due dates and which notebook to use each week.
