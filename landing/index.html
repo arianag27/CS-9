@@ -86,6 +86,19 @@
     .hero a.btn-outline:hover {
       background: rgba(255, 255, 255, 0.12);
     }
+    .hero-textbook {
+      margin: 1rem 0 0;
+      font-size: 1rem;
+    }
+    .hero-textbook a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+    .hero-textbook a:hover {
+      opacity: 0.9;
+    }
     main {
       max-width: 72rem;
       margin: 0 auto;
@@ -115,7 +128,7 @@
     }
     table.schedule {
       width: 100%;
-      min-width: 52rem;
+      min-width: 58rem;
       border-collapse: collapse;
       font-size: 0.875rem;
     }
@@ -188,13 +201,16 @@
         <a class="btn" href="./lab/index.html?path=csci9-sp26-student">Browse materials</a>
         <a class="btn btn-outline" href="./lab/index.html?path=csci9-sp26-student/README.md">Course overview</a>
       </div>
+      <p class="hero-textbook">
+        <a href="https://ds-modules.github.io/ecc-cs9-textbook/">Course textbook</a>
+      </p>
     </div>
   </header>
 
   <main>
     <div class="intro">
       <p>
-        <strong>How to use this page:</strong> Use <em>Slides</em> for lecture decks.
+        <strong>How to use this page:</strong> Use <em>Slides</em> for lecture decks and <em>Textbook</em> for reading.
         Use <em>Notebook</em> and <em>Lab</em> to open course materials in your browser—no installation required.
         Your instructor’s syllabus is the final word on what to submit and when.
       </p>
@@ -209,6 +225,7 @@
             <th scope="col">Title</th>
             <th scope="col">Slides</th>
             <th scope="col">Notebook</th>
+            <th scope="col">Textbook</th>
             <th scope="col">Lab</th>
           </tr>
         </thead>
@@ -218,6 +235,7 @@
             <td class="title">Intro / CSCI-8 Review</td>
             <td><a href="https://docs.google.com/presentation/d/14YmT7rsjsh2Omo9qWPJmC4ZqaRGb-wOkOmWfQLskcuk/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/intro/intro.ipynb">intro</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/intro/">intro</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab01/lab01.ipynb">lab01</a></td>
           </tr>
           <tr>
@@ -225,6 +243,7 @@
             <td class="title">Pandas I</td>
             <td><a href="https://docs.google.com/presentation/d/1lsWRU-dWpaVsmrNPY58jE-P4TCYwIBi1p7eDCFT5U9w/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_1/pandas_1.ipynb">pandas_1</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/pandas-i/">pandas-i</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab02/lab02.ipynb">lab02</a></td>
           </tr>
           <tr>
@@ -232,6 +251,7 @@
             <td class="title">Pandas II</td>
             <td><a href="https://docs.google.com/presentation/d/1P_R3J10w4QicGfyXKB4tztsJjiVLg2iWe3Sy9F8QIDU/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_2/pandas_2.ipynb">pandas_2</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/pandas-ii/">pandas-ii</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
@@ -239,6 +259,7 @@
             <td class="title">Pandas III</td>
             <td><a href="https://docs.google.com/presentation/d/146X-rFLnjtDITzEDgUzPvP6QL95s3CoVDmiBaAHzu3A/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/pandas_3/pandas_3.ipynb">pandas_3</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/pandas-iii/">pandas-iii</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03A/lab03A.ipynb">lab03A</a></td>
           </tr>
           <tr>
@@ -246,6 +267,7 @@
             <td class="title">Exploring and Cleaning Data / Text Wrangling</td>
             <td><a href="https://docs.google.com/presentation/d/1rCmtGJ4gnDMKx1EFgPTYHha7xvPs3kiYLrktIBhZPj0/edit">Slides</a></td>
             <td class="muted">—</td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/eda/">eda</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab03B/lab03B.ipynb">lab03B</a></td>
           </tr>
           <tr>
@@ -253,6 +275,7 @@
             <td class="title">Text Wrangling and Regular Expressions / Visualization</td>
             <td><a href="https://docs.google.com/presentation/d/1wja9GN0MExL901QyunLytr1QBY1BEYdrUqdw_vskc1w/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/text_wrangling_regex/text_wrangling_regex.ipynb">text_wrangling_regex</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/text-wrangling-regex/">text-wrangling-regex</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab04/lab04.ipynb">lab04</a></td>
           </tr>
           <tr>
@@ -260,6 +283,7 @@
             <td class="title">Visualization</td>
             <td><a href="https://docs.google.com/presentation/d/1nlZrjEDs99uL_Ff_gnMCa50d9aisnYUj_szMPNBprek/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_1/visualization_1.ipynb">visualization_1</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/visualization-i/">visualization-i</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
@@ -267,6 +291,7 @@
             <td class="title">Visualization 2</td>
             <td><a href="https://docs.google.com/presentation/d/1rJLeu1qTyhjxnKzLAk64qxR4elKY6HPHmdEGWfo1e8/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/visualization_2/visualization_2.ipynb">visualization_2</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/visualization-ii/">visualization-ii</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab06/proj1.ipynb">lab06</a></td>
           </tr>
           <tr>
@@ -277,6 +302,7 @@
               <a href="https://docs.google.com/presentation/d/1_HFA6HwP6qILG70U0mHj3n4FD7CSslHsxhS02KoyySw/edit">Slides 2</a>
             </td>
             <td class="muted">—</td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/sampling/">sampling</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab05/lab05.ipynb">lab05</a></td>
           </tr>
           <tr>
@@ -284,6 +310,7 @@
             <td class="title">Modeling — Simple Linear Regression</td>
             <td><a href="https://docs.google.com/presentation/d/1Y0tQ4XQy1pOcV3uDcPqvRuCxA9yUnt8-q7RsyRRPS9g/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_1/modeling_1.ipynb">modeling_1</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/modeling-i/">modeling-i</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
@@ -291,6 +318,7 @@
             <td class="title">Modeling — Feature Engineering</td>
             <td><a href="https://docs.google.com/presentation/d/1pRqfY_TcwjIOeAbMbQ8SHvRrT9cEi3evzF5CqBkluiU/edit">Slides</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_2/modeling_2.ipynb">modeling_2</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/modeling-ii/">modeling-ii</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab07/Modeling_CA_Housing_lab.ipynb">lab07</a></td>
           </tr>
           <tr>
@@ -298,6 +326,7 @@
             <td class="title">Cancelled / Standardization, Multicollinearity, Generalization</td>
             <td class="muted">—</td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_3/modeling_3.ipynb">modeling_3</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/modeling-iii/">modeling-iii</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
@@ -305,6 +334,7 @@
             <td class="title">Hyperparameters, Cross-Validation, Decision Trees / Random Forests, Classifier Evaluation</td>
             <td class="muted">—</td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lecture/modeling_4/modeling_4.ipynb">modeling_4</a></td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/modeling-iv/">modeling-iv</a></td>
             <td><a href="./lab/index.html?path=csci9-sp26-student/lab/lab08/policing.ipynb">lab08</a></td>
           </tr>
           <tr>
@@ -312,6 +342,7 @@
             <td class="title">SQL I</td>
             <td><a href="https://docs.google.com/presentation/d/1LmImTSHiGooUrdxqIw5E3jUYH5DaG3eRIJNzGNx04fg/edit">Slides</a></td>
             <td class="muted">—</td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/sql-i/">sql-i</a></td>
             <td class="muted">—</td>
           </tr>
           <tr>
@@ -319,6 +350,7 @@
             <td class="title">SQL II</td>
             <td><a href="https://docs.google.com/presentation/d/1Xa-h5jFcqDGZnbQMkiUNJMiRcnsNMJh6Vr3_hHFeXKs/edit">Slides</a></td>
             <td class="muted">—</td>
+            <td><a href="https://ds-modules.github.io/ecc-cs9-textbook/sql-ii/">sql-ii</a></td>
             <td class="muted">—</td>
           </tr>
         </tbody>
