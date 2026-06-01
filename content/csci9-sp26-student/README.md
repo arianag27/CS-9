@@ -29,8 +29,8 @@ Course notebooks and data files for use in the browser via JupyterLite.
 | Lab 3B | `lab/lab03B/lab03B.ipynb` |
 | Lab 4 | `lab/lab04/lab04.ipynb` |
 | Lab 5 | `lab/lab05/lab05.ipynb` |
-| Lab 6 (project) | `lab/lab06/proj1.ipynb` |
-| Lab 7 | `lab/lab07/Modeling_CA_Housing_lab.ipynb` |
-| Lab 8 | `lab/lab08/policing.ipynb` |
+| Lab 6 (project) | `lab/lab06/lab06.ipynb` |
+| Lab 7 | `lab/lab07/lab07.ipynb` |
+| Lab 8 | `lab/lab08/lab08.ipynb` |
 
 Your instructor’s syllabus is the source of truth for due dates and which notebook to use each week.
